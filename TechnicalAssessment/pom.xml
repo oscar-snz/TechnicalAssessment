@@ -3,4 +3,28 @@
   <groupId>TechnicalAssessment</groupId>
   <artifactId>TechnicalAssessment</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+
+  <dependencies>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.0.3</version>
+    </dependency>
+    
+    <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.2.2</version>
+</dependency>
+
+</dependencies>
+
 </project>
