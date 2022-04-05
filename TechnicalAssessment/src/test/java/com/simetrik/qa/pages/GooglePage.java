@@ -1,5 +1,6 @@
 package com.simetrik.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +26,8 @@ public class GooglePage extends CommonUI{
 		
 	}
 	
+	/*This function will return true if at least one result is found
+	 */
 	public boolean resultsExist() {
 		boolean exist = false;
 		
@@ -35,6 +38,12 @@ public class GooglePage extends CommonUI{
 		
 		return exist;
 		
+	}
+	
+	public int resultsCount() {
+		int count = 0;
+		count = driver.findElements(By.cssSelector(".LC20lb.MBeuO.DKV0Md")).size();
+		return count;
 	}
 	
 }

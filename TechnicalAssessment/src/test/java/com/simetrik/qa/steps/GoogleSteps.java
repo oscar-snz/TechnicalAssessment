@@ -1,5 +1,6 @@
 package com.simetrik.qa.steps;
 
+
 import com.simetrik.qa.utils.CommonUI;
 import com.simetrik.qa.utils.ObjInitialize;
 
@@ -30,6 +31,9 @@ public class GoogleSteps extends ObjInitialize{
 	public void user_verifies_results_greater_than_zero() {
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(GooglePageObj.resultsExist(), true);
+		if(GooglePageObj.resultsExist()){
+			System.out.println("Total of " + GooglePageObj.resultsCount() + " results were found");
+		}
 	    softAssert.assertAll();
 	    
 	    CommonUI.quitBrowser();
