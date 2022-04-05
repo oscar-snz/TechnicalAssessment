@@ -11,6 +11,5 @@ public class Constants {
 		
 		public static WebDriver driver;
 		
-		//declare class objects and common objects
 		public static GooglePage GooglePageObj;
 }
