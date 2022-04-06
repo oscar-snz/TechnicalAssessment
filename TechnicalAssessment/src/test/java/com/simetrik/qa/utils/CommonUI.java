@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,9 +21,14 @@ public class CommonUI extends Constants{
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				break;
+				
+			case "firefox":
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+				break;
 }
 		}catch (Exception e) {
-			System.out.println("Browser has [" + browser + "] value. Make sure to pass [chrome]");
+			System.out.println("Browser has [" + browser + "] value. Make sure to pass [chrome/firefox]");
 			e.printStackTrace();
 	}
 }
