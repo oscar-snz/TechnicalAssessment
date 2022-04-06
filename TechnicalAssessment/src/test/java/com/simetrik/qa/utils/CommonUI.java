@@ -10,29 +10,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.Keys;
 
-public class CommonUI extends Constants{
+public class CommonUI extends Constants {
 
 	public static void openBrowser(String browser) {
 		try {
- 
+
 			switch (browser.toLowerCase()) {
 
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				break;
-				
+
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				break;
-}
-		}catch (Exception e) {
+			}
+		} catch (Exception e) {
 			System.out.println("Browser has [" + browser + "] value. Make sure to pass [chrome/firefox]");
 			e.printStackTrace();
+		}
 	}
-}
-	
+
 	public static void navigate(String url) {
 
 		try {
@@ -47,7 +47,7 @@ public class CommonUI extends Constants{
 		}
 
 	}
-	
+
 	public static boolean isDisplayed(WebElement element) {
 		try {
 
@@ -61,23 +61,23 @@ public class CommonUI extends Constants{
 			return false;
 		}
 	}
-	
+
 	public static void enter(WebElement element, String value) {
 
 		if (isDisplayed(element)) {
 			element.clear();
 			element.sendKeys(value);
-			
+
 		}
 
-}
-	
+	}
+
 	public static void sendEnter(WebElement element) {
 		if (isDisplayed(element)) {
 			element.sendKeys(Keys.RETURN);
 		}
 	}
-	
+
 	public static void quitBrowser() {
 
 		try {
