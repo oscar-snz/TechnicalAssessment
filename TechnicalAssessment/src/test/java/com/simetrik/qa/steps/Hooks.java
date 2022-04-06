@@ -7,11 +7,11 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks {
-	
+
 	@Before
 	public void setUp() {
 		CommonUI.openBrowser("chrome");
-		ObjInitialize.intializeClassObj();;
+		ObjInitialize.intializeClassObj();
 	}
 
 	@After

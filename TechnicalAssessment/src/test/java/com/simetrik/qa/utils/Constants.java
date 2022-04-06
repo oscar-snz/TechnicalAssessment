@@ -12,7 +12,7 @@ public class Constants {
 	public static WebDriver driver;
 
 	public static GooglePage googlePageObj;
-	
+
 	public static Map<String, String> regionDataMap = new HashMap<>();
-	
+
 }

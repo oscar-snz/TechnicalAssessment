@@ -25,10 +25,6 @@ public class GooglePage extends CommonUI {
 
 	}
 
-	// This method will return true if at least one result is found
-
-	
-
 	// this method will return the amount of results
 	public int resultsCount() {
 		int count = 0;
