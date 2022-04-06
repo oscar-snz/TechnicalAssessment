@@ -27,16 +27,7 @@ public class GooglePage extends CommonUI {
 
 	// This method will return true if at least one result is found
 
-	public boolean resultsExist() {
-		boolean exist = false;
-
-		if (result.isDisplayed()) {
-			exist = true;
-		}
-
-		return exist;
-
-	}
+	
 
 	// this method will return the amount of results
 	public int resultsCount() {

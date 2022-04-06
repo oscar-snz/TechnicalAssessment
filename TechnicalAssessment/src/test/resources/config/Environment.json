@@ -1,0 +1,19 @@
+{
+	"scrum": {
+		"url": "https://www.google.com.co",
+		"username": "",
+		"password": "",
+		"DBServerName": "",
+		"DBUsername": "",
+		"DBPassword": ""
+	},
+	"dev": {
+		"url": "",
+		"username": "",
+		"password": "",
+		"DBServerName": "",
+		"DBUsername": "",
+		"DBPassword": ""
+	}
+  
+}
